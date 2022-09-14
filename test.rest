@@ -1,0 +1,37 @@
+
+#### API
+
+#### Get All Employees
+GET http://localhost:3000/employees/all
+
+#### Get Employee
+GET http://localhost:3000/employees/10
+
+#### Add Employee
+POST http://localhost:3000/employees/create
+content-type: application/json
+
+{
+    
+    "Code": "CT8003",
+    "Name": "Budah peon",
+    "Job": "Manager",
+    "Salary": 60000,
+    "Department": "Operations"
+}
+
+#### Update Employee
+PUT http://localhost:3000/employees/21
+content-type: application/json
+
+{
+    "Id": 21,
+    "Code": "CT9002",
+    "Name": "Brandy Atieno",
+    "Job": "CFO",
+    "Salary": 100000,
+    "Department": "Operations"
+}
+
+#### Delete Employee
+DELETE http://localhost:3000/employees/25
